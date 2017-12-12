@@ -7,6 +7,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<c:import url = "/WEB-INF/views/index.jsp" />
 	<table class="table table-striped">
 		<thead>
 			<tr>				
