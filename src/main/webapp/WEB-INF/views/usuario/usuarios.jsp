@@ -9,8 +9,7 @@
 <body>
 	<table class="table table-striped">
 		<thead>
-			<tr>
-				<th>Id</th>
+			<tr>				
 				<th>Nome</th>
 				<th>Endereco</th>
 				<th>Data Nascimento</th>
@@ -23,8 +22,7 @@
 			
 			<c:forEach items="${usuarios}" var="usuario">
 				<tr>
-					<td> ${usuario.getId()} </td>
-					<td> ${usuario.getNome()} </td>
+					<td><a href="/usuario/${usuario.getId()}">${usuario.getNome()}</a> </td>
 					<td> ${usuario.getEndereco()} </td>
 					<td> ${usuario.getDataNascimento()} </td>
 					<td> <a href="alterar/${usuario.getId()}">Editar</a></td>

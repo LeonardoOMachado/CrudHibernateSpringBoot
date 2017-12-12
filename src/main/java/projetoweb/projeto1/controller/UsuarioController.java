@@ -42,8 +42,9 @@ public class UsuarioController {
 	}
 	
 	@PostMapping("/usuario/alterar/{id}")
-	public String olamundo(@PathVariable Long id , Usuario usuario){		
-		return "index";
+	public String olamundo(Usuario usuario){
+		usuarioService.delete(usuario.getId());
+		return cadastrarUsuario(usuario);		
 	}
 	
 	
